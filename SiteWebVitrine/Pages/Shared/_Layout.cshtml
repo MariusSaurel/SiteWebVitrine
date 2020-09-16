@@ -1,37 +1,40 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SiteWebVitrine</title>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <ul class="nav justify-content-center">
+    <ul class="nav justify-content-center nav-grey" style="position:fixed;width:100vw;padding-bottom:1vh;padding-top:1vh;">
         <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link left nav-item-grey" href="../index">ACCUEIL</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link active nav-item-grey" href="#Services">SERVICES</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link nav-item-grey" href="#Projets">PROJETS</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link nav-item-grey" href="#Histoire">HISTOIRE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-item-grey" href="#Contact">CONTACT</a>
         </li>
     </ul>
 
-    <partial name="_CookieConsentPartial" />
-
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2020 - SiteWebVitrine</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>&copy; 2020 - SiteWebVitrine</p>
+    </footer>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
